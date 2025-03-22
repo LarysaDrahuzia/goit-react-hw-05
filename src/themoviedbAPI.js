@@ -16,7 +16,7 @@ export const trendingMovies = async page => {
     options
   );
 
-  return data;
+  return data.results;
 };
 
 export const fetchMovies = async query => {
@@ -24,7 +24,7 @@ export const fetchMovies = async query => {
     `search/movie?include_adult=false&language=en-US&page=1&query=${query}`,
     options
   );
-  return data.response.query;
+  return data.results;
 };
 
 export const fetchMoviesId = async movieId => {
@@ -45,5 +45,5 @@ export const fetchMoviesIdReviews = async movieId => {
     `movie/${movieId}/reviews?language=en-US`,
     options
   );
-  return data.reviews;
+  return data.results;
 };

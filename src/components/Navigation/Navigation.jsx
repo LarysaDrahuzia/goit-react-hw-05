@@ -17,7 +17,7 @@ const Navigation = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/dashboard" className={getLinkStyles}>
+            <NavLink to="/movies" className={getLinkStyles}>
               Movies
             </NavLink>
           </li>

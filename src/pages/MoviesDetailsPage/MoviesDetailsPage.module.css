@@ -1,0 +1,37 @@
+.back {
+  text-decoration: none;
+  background-color: dimgray;
+  color: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+.back:hover {
+  color: aqua;
+}
+
+.title {
+  margin-top: 20px;
+  color: mediumaquamarine;
+}
+
+.list {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.item {
+  background-color: mediumaquamarine;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 12px;
+}

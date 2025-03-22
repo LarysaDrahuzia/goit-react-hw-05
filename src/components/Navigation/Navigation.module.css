@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0;
+  background-color: dimgray;
+
+  margin-bottom: 20px;
+}
+
+.nav {
+  padding: 10px 20px;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.link {
+  text-decoration: none;
+  padding: 12px;
+  font-weight: 500;
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.2s ease-in-out;
+  border: 2px solid #fff;
+  border-radius: 8px;
+}
+
+.link:hover {
+  color: aqua;
+}
+
+.active {
+  color: aqua;
+  font-weight: 700;
+}

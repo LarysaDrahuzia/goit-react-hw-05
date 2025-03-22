@@ -9,8 +9,9 @@ const MovieReviews = () => {
 
   useEffect(() => {
     const getReviews = async () => {
-      const data = await fetchMoviesIdReviews(movieId);
-      setReviews(data);
+      const results = await fetchMoviesIdReviews(movieId);
+      console.log(results);
+      setReviews(results);
     };
     getReviews();
   }, [movieId]);
@@ -21,8 +22,8 @@ const MovieReviews = () => {
         {reviews.length > 0 &&
           reviews.map(({ id, author, content }) => (
             <li key={id}>
-              <p>Author: {author}</p>
-              <p>{content}</p>
+              <p className={css.author}>Author: {author}</p>
+              <p className={css.content}>{content}</p>
             </li>
           ))}
       </ul>
